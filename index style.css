@@ -1,0 +1,221 @@
+header{ 
+    background-color: #ead2bb;
+    height:80px;
+    width:100%;
+    position:relative;
+}
+h1{ 
+    position:absolute;
+    left:120px;
+    top:0;
+    line-height:80px;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+header ul{
+    position:absolute;
+    right:6vw;
+    top:0;
+    line-height: 20px;
+}
+header li{
+    display: inline;
+    margin-right:4vw;
+}
+header a {
+    color:white;
+    text-decoration:none;
+}
+header a:hover{
+    text-decoration:underline;
+}
+body {
+ margin: 0px;
+ padding:0px;
+
+}
+.menu {
+    display:none;
+}
+h2 a{
+    background-color: #0078d4;
+    margin: 0;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+section {
+    margin-top: 0;
+}
+body {
+    margin: 0;      /* 移除整體白邊 */
+    padding: 0;
+  }
+  
+  .full-width-title {
+    background-color: #c0774d; /* 你想填的顏色 */
+    margin: auto;                   /* 移除 h2 本身預設邊距 */
+    padding: auto;             /* 上下內邊距讓內容不緊貼 */
+    width: 100vw;                /* 寬度滿版 */
+    text-align: center;          /* 圖片置中 */
+  }
+  
+  .full-width-title img {
+    height:auto;               /* 圖片大小 */
+  }
+  h5{
+    text-align: center;
+    margin:0;
+    background-color: #c4ae96;
+    padding: 10px;
+  }
+
+/* 子選單樣式 */
+.submenu {
+    display: none; /* 預設隱藏 */
+    position: absolute;
+    top: 100%; /* 子選單顯示在主選單下方 */
+    left: 10;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.submenu li a {
+    display: block;
+    padding: 5px 10px;
+    width: 50%;
+    text-decoration: none;
+    color: white;
+}
+
+.submenu li a:hover {
+    background-color: #666;
+}
+
+footer {
+    text-align: center; /* 文字水平居中 */
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+
+.player-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 音樂控制按鈕 */
+.controls {
+    margin-top: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0078d4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #005a9e;
+    }
+button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #0078d4;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+/* 響應式設計語法 */
+@media screen and (max-width:768px) {
+    h2 img{
+       height: 120px  !important;
+       width: 200px !important;
+    }
+
+    header ul{
+        display:none;
+    }
+    header h1{
+        left:50%; 
+        transform:translateX (-50%);
+    }
+
+    .news h2{
+        font-size:40px;
+    }
+    
+    .menu{
+        display: block;
+        background-color: transparent;
+        font-size: 20px;
+        position: absolute;
+        top: 11px;
+        left: -5%;
+        border:none;
+        cursor:pointer;
+        
+    }
+
+    .body{
+        height: 100%;
+        width: 100%;
+    }
+
+    audio, video {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+    }
+    nav ul{
+        display:none;
+        left:0;
+    }
+
+    nav ul li{
+        display:block;
+    }
+
+    .left-column img {
+        height: 150px;
+        margin-top: -60px;
+    }
+    .right-column{
+        flex-direction: column;
+
+    }
+
+    .shop img{
+        width:100%
+    }
+
+    .info{
+        width: 100%;
+        padding:40px 0;
+    }
+    
+    .info h2{
+        font-size:30px
+    }
+
+}

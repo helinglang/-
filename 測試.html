@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header 下拉選單</title>
+  <style>
+    /* 基本樣式 */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu > li {
+      position: relative;
+      margin-right: 20px;
+    }
+
+    .menu > li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    .menu > li a:hover {
+      background-color: #555;
+    }
+
+    /* 下拉選單樣式 */
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      top: 100%;
+      left: 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .submenu li {
+      margin-bottom: 5px;
+    }
+
+    .submenu li a {
+      color: white;
+      padding: 5px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .submenu li a:hover {
+      background-color: #555;
+    }
+
+    /* 顯示下拉選單 */
+    .menu > li:hover .submenu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <ul class="menu">
+      <li><a href="#">首頁</a></li>
+      <li>
+        <a href="#">服務</a>
+        <!-- 下拉選單 -->
+        <ul class="submenu">
+          <li><a href="#">選項 1</a></li>
+          <li><a href="#">選項 2</a></li>
+          <li><a href="#">選項 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">關於我們</a></li>
+      <li><a href="#">聯絡我們</a></li>
+    </ul>
+  </header>
+</body>
+</html>
